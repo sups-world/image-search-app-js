@@ -41,14 +41,19 @@ async function searchImages() {
     searchResultsElement.appendChild(imageWrapper);
   });
   //   console.log(results);
+  page++;
 
   if (page > 1) {
-    showMoreButtonElement.style.display = block;
+    showMoreButtonElement.style.display = "block";
   }
 }
 
 formElement.addEventListener("submit", (e) => {
   e.preventDefault();
   page = 1;
+  searchImages();
+});
+
+showMoreButtonElement.addEventListener("click", () => {
   searchImages();
 });
