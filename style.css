@@ -73,3 +73,17 @@ form {
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
 }
+
+.search-result a {
+  padding: 10px;
+  display: block;
+  background-color: pink;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out;
+  color: black;
+}
+
+.search-result:hover a {
+  background-color: rgb(219, 17, 17);
+  color: white;
+}
