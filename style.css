@@ -84,6 +84,7 @@ form {
   text-decoration: none;
   transition: background-color 0.2s ease-in-out;
   color: black;
+  text-transform: capitalize;
 }
 
 .search-result:hover a {
@@ -103,6 +104,8 @@ form {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
+
+  display: none;
 }
 
 #show-more-button:hover {
